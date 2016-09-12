@@ -15,12 +15,14 @@ import { XLarge } from './x-large';
   ],
   // Our list of styles in our component. We may add more to compose many styles together
   styleUrls: [ './home.style.css' ],
-  // Every Angular template is first compiled by the browser before Angular runs it's compiler
+  // Every Angular template is first compiled by the browser before Angular runs its compiler
   templateUrl: './home.template.html'
 })
 export class Home {
   // Set our default values
   localState = { value: '' };
+  date;
+
   // TypeScript public modifiers
   constructor(public appState: AppState, public title: Title) {
 
@@ -29,6 +31,10 @@ export class Home {
   ngOnInit() {
     console.log('hello `Home` component');
     // this.title.getData().subscribe(data => this.data = data);
+
+    setInterval(() => {
+      this.date = new Date();
+    }, 1000);
   }
 
   submitState(value: string) {
