@@ -20,6 +20,7 @@ import { Home } from './home';
 import { About } from './about';
 import { Users } from './users';
 import { Wiki } from './wiki';
+import { Contact } from './contact';
 import { NoContent } from './no-content';
 import { XLarge } from './home/x-large';
 import {UsersService} from './services/usersService'
@@ -46,6 +47,7 @@ type StoreType = {
     Home,
     Users,
     Wiki,
+    Contact,
     NoContent,
     XLarge
   ],
