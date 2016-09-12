@@ -18,6 +18,7 @@ import { Home } from './home';
 import { About } from './about';
 import { NoContent } from './no-content';
 import { XLarge } from './home/x-large';
+import {UsersService} from './services/usersService'
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -50,7 +51,8 @@ type StoreType = {
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
-    APP_PROVIDERS
+    APP_PROVIDERS,
+    UsersService
   ]
 })
 export class AppModule {
