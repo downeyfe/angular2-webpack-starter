@@ -23,7 +23,8 @@ import 'rxjs/add/operator/delay';
     <h1>Wikipedia</h1>
     <input type="text" [formControl]="search">
     <div><ul>
-      <li *ngFor="let result of results | async">
+      <li *ngFor="let result of results | async"
+        [class.frances]="result.title.toLowerCase().indexOf('frances') !== -1">
         {{result.title}}
       </li>
     </ul></div>`
