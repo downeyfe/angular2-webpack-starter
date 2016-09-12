@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Frances",
+      "roles": [
+        "admin",
+        "user"
+      ],
+      "superuser": true
+    },
+    {
+      "id": 2,
+      "username": "Jordan",
+      "roles": [
+        "user"
+      ],
+      "superuser": false
+    }
+  ]
+}
