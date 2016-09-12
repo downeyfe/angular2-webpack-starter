@@ -6,7 +6,7 @@ import {UsersService} from '../services/usersService';
   selector: 'users',
   styles: [`
     .superuser {
-      color: lightseagreen;
+      background-color: lavender;
     }
   `],
   template: `<h1>Users</h1>
