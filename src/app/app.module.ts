@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
+import { ReactiveFormsModule } from '@angular/forms';
+import { JsonpModule } from '@angular/http';
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -17,6 +19,7 @@ import { AppState, InteralStateType } from './app.service';
 import { Home } from './home';
 import { About } from './about';
 import { Users } from './users';
+import { Wiki } from './wiki';
 import { NoContent } from './no-content';
 import { XLarge } from './home/x-large';
 import {UsersService} from './services/usersService'
@@ -42,6 +45,7 @@ type StoreType = {
     About,
     Home,
     Users,
+    Wiki,
     NoContent,
     XLarge
   ],
@@ -49,7 +53,9 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES, { useHash: true })
+    RouterModule.forRoot(ROUTES, { useHash: true }),
+    JsonpModule,
+    ReactiveFormsModule
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
