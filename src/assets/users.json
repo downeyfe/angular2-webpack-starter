@@ -10,6 +10,31 @@
       "superuser": true
     },
     {
+      "id": 102934,
+      "username": "Frances Again",
+      "roles": [
+        "admin"
+      ],
+      "superuser": true
+    },
+    {
+      "id": 835,
+      "username": "AKsjhd",
+      "roles": [
+        "user"
+      ],
+      "superuser": false
+    },
+    {
+      "id": 9874,
+      "username": "Frances",
+      "roles": [
+        "admin",
+        "user"
+      ],
+      "superuser": true
+    },
+    {
       "id": 2,
       "username": "Jordan",
       "roles": [
